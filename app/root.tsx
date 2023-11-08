@@ -11,9 +11,7 @@ import {
 import { ReactNode } from "react";
 import "virtual:uno.css";
 import "@unocss/reset/tailwind.css";
-import styles from "./app.css?inline";
-
-export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
+import "./app.css";
 
 export default function App() {
   return (
@@ -39,10 +37,11 @@ export default function App() {
 function Layout({ children }: { children: ReactNode }) {
   return (
     <>
-      <nav className="px-10 pt-5"></nav>
-      <Link to="/" prefetch="intent" className="text-2xl font-semibold">
-        Move<span className="text-teal-500">DB</span>
-      </Link>
+      <nav className="px-10 pt-5">
+        <Link to="/" prefetch="intent" className="text-2xl font-semibold">
+          Jo<span className="text-teal-500">DB</span>
+        </Link>
+      </nav>
       <main>{children}</main>
     </>
   );
