@@ -29,6 +29,7 @@
     "@types/react-dom": "^18.2.7",
     "@unocss/reset": "^0.57.2",
     "eslint": "^8.38.0",
+    "prisma": "^5.5.2",
     "typescript": "^5.1.6",
     "unocss": "^0.57.2",
     "vite": "^4.5.0",
