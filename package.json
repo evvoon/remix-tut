@@ -2,6 +2,7 @@
   "name": "",
   "private": true,
   "sideEffects": false,
+  "type": "module",
   "scripts": {
     "build": "vite build && vite build --ssr",
     "dev": "vite dev",
@@ -20,7 +21,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.2.0",
+    "@remix-run/dev": "npm:@vercel/remix-run-dev@^2.2.0",
     "@remix-run/eslint-config": "^2.2.0",
     "@remix-run/node": "^2.2.0",
     "@types/react": "^18.2.36",

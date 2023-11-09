@@ -4,9 +4,5 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import UnoCSS from "unocss/vite";
 
 export default defineConfig({
-  plugins: [
-    remix({ ignoredRouteFiles: ["**/.*"], serverModuleFormat: "cjs" }),
-    tsconfigPaths(),
-    UnoCSS(),
-  ],
+  plugins: [remix({ ignoredRouteFiles: ["**/.*"] }), tsconfigPaths(), UnoCSS()],
 });
